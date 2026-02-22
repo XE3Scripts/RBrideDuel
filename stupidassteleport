@@ -1,0 +1,8 @@
+game:GetService("Players").LocalPlayer.OnTeleport:Connect(function()
+    if not tped then
+        tped = true
+        queue_on_teleport([[
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/XE3Scripts/RBrideDuel/main/RedBull%20Client"))()
+        ]])
+    end
+end)
