@@ -1,12 +1,15 @@
-local SCRIPT = "loadstring(game:HttpGet('https://raw.githubusercontent.com/XE3Scripts/RBrideDuel/main/RedBull%20Client'))()"
+local LINK = "https://raw.githubusercontent.com/XE3Scripts/RBrideDuel/main/RedBull%20Client"
 
-local queue = syn and syn.queue_on_teleport
-            or queue_on_teleport
-            or queueonteleport
-            or fluxus and fluxus.queue_on_teleport
+local SCRIPT = "loadstring(game:HttpGet('https://raw.githubusercontent.com/XE3Scripts/RBrideDuel/main/RedBullClient'))()"
+
+local queue =
+      syn and syn.queue_on_teleport
+   or queue_on_teleport
+   or queueonteleport
+   or fluxus and fluxus.queue_on_teleport
 
 if queue then
     queue(SCRIPT)
 end
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/XE3Scripts/RBrideDuel/main/RedBull%20Client"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XE3Scripts/RBrideDuel/main/RedBullClient"))()
